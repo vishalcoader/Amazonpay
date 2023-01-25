@@ -1,0 +1,88 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:background="#C5CFD3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:hint="Type User Email"
+        android:id="@+id/et_email"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center_horizontal">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_email"
+        android:textSize="12sp"
+        android:text=""
+        android:textColor="#AE0E0E"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:hint="Email Id Password "
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:id="@+id/et_password"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#AE0E0E"
+        android:id="@+id/error_password"
+        android:text=""
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Forget Password"
+
+        android:textColor="#EF0909"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:onClick="submit"
+        android:layout_marginTop="30dp"
+        android:text="Login"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EF0707"
+        android:layout_height="wrap_content"
+          android:text="New Register"
+        android:onClick="gotoRegistration"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
